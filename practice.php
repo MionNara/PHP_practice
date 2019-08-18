@@ -47,3 +47,102 @@ $calendar_2018 = [
 // 12月を表示する
 echo $calendar_2018["December"];
 
+
+
+//PHP/Laravel 03 
+//プログラムの実行を条件分岐構文と繰り返し構文で制御できるようになろう
+
+
+// else if
+$height = 230;
+
+if ($height < 150) {
+  echo "150cm　未満の方はご乗車できません。";
+} else if ($height >= 200) {
+  echo "200cm　以上の方はご乗車できません。";
+} else {
+  echo "ご乗車になれます。";
+}
+
+
+//switch
+$weekday = "土曜";
+switch ($weekday) {
+  case "月曜";
+  case "木曜";
+    echo "可燃ごみの日です";
+    break;
+  case "水曜";
+    echo "資源ごみの日です";
+    break;
+  default:
+    echo "回収はありません";
+    echo "\n";
+    break;
+}
+
+
+
+//課題2
+  echo "【課題】：PHP/Laravel 03";
+  echo "\n";
+
+//1
+$name2 = "Mion";
+
+switch ($name2) {
+  case "Mion Nara";
+     echo "私はあなたの名前です";
+   break;
+   default:
+     echo "あなたの名前ではありません";
+     echo "\n";
+   break;
+}
+
+if ($name2 == "Mion Nara") {
+  echo "私はあなたの名前です";
+} else { 
+  echo "あなたの名前ではありません";
+  echo "\n";
+}
+
+
+//2
+// += 変数と式の和を変数に代入する
+$total = 0;
+for ($i = 0; $i <= 10000; $i++){
+  $total += $i;
+}
+  echo $total;
+  echo "\n";
+ 
+
+//3
+$fruits  = array("apple", "orange" , "lemon", "peach" , "grape");
+
+//要素の数
+echo count($fruits);
+echo "\n";
+
+//出力
+foreach($fruits as $fruits){
+  echo "要素は".$fruits;
+  echo "\n";
+}
+
+
+//4
+/* for文の始めの値を定義する */
+$start = 1;
+/* for文の終わりの値を定義する */
+$end = 100;
+
+for($i = $start; $i < $end; $i++){
+  // 5で割り切れたら{}内を実行する
+  if($i % 5 == 0){
+    echo $i;
+    echo "\n";
+  }
+}
+
