@@ -119,6 +119,7 @@ for ($i = 0; $i <= 10000; $i++){
  
 
 //3
+//foreach文は配列の要素を順番に処理するための構文hhいい
 $fruits  = array("apple", "orange" , "lemon", "peach" , "grape");
 
 //要素の数
@@ -126,10 +127,11 @@ echo count($fruits);
 echo "\n";
 
 //出力
-foreach($fruits as $fruits){
-  echo "要素は".$fruits;
+foreach($fruits as $fruit){
+  echo "要素は".$fruit;
   echo "\n";
 }
+//$fruitsから一つずつ要素を取り出して、$fruitに代入させる
 
 
 //4
@@ -138,11 +140,19 @@ $start = 1;
 /* for文の終わりの値を定義する */
 $end = 100;
 
-for($i = $start; $i < $end; $i++){
+for($i = $start; $i <= $end; $i++){
   // 5で割り切れたら{}内を実行する
   if($i % 5 == 0){
     echo $i;
     echo "\n";
   }
 }
+/*
+1から100まで表示させたい
+×$i < $end
+○$i <= $end
+
+*/
+
+
 
