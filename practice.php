@@ -119,7 +119,7 @@ for ($i = 0; $i <= 10000; $i++){
  
 
 //3
-//foreach文は配列の要素を順番に処理するための構文hhいい
+//foreach文は配列の要素を順番に処理するための構文
 $fruits  = array("apple", "orange" , "lemon", "peach" , "grape");
 
 //要素の数
